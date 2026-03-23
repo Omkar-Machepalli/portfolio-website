@@ -1,6 +1,8 @@
+import { YEARS_OF_EXPERIENCE } from "../data/constants";
+
 const About = () => {
   const info = [
-    ["Experience", "2.8+ Years"],
+    ["Experience", `${YEARS_OF_EXPERIENCE} Years`],
     ["Primary Stack", "Angular"],
     ["Secondary Stack", "React"],
     ["Role", "Front-End Developer"],
@@ -20,11 +22,16 @@ const About = () => {
             </h2>
 
             <p className="section-text">
-              I am a Front-End Developer with 2.8+ years of experience in Angular,
-              TypeScript, RxJS, and React. I have worked on responsive web
-              applications, reusable UI components, dynamic forms, and API-driven
-              modules. My experience includes Broadcast, Events, Invoice,
-              Committees, and Payment Forms.
+              I am a passionate Front-End Developer with {YEARS_OF_EXPERIENCE} years of experience
+              specializing in Angular, TypeScript, RxJS, and React. Throughout my
+              career, I've focused on creating responsive web applications that
+              deliver exceptional user experiences. My expertise includes
+              developing reusable UI components, implementing dynamic forms,
+              and integrating REST APIs to build robust, scalable solutions.
+              I've successfully delivered projects involving Broadcast systems,
+              Event management platforms, Invoice processing modules, Committee
+              management tools, and secure Payment Forms, always prioritizing
+              clean code, performance optimization, and user-centric design.
             </p>
           </div>
         </div>

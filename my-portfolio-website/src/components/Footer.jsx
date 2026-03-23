@@ -1,8 +1,10 @@
+import { SOCIAL_LINKS } from "../data/constants";
+
 const Footer = () => {
   return (
     <footer className="footer-custom">
         <div className="container">
-            <div className="text-center mb-4">
+            <div className="text-center">
                 <h5 className="fw-bold mb-1">
                     Omkar <span className="highlight-text">Machepalli</span>
                 </h5>
@@ -20,17 +22,15 @@ const Footer = () => {
                 </p>
             </div>
 
-            <div className="d-flex justify-content-center flex-wrap gap-3 mb-4">
-                <a href="https://github.com/yourusername" target="_blank" rel="noreferrer" className="social-btn github">
-                    GitHub
+            <div className="d-flex flex-wrap gap-3 justify-content-center my-4">
+                <a href={SOCIAL_LINKS.github} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="GitHub Profile">
+                    <i className="fab fa-github"></i>
                 </a>
-
-                <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer" className="social-btn linkedin">
-                    LinkedIn
+                <a href={SOCIAL_LINKS.linkedin} target="_blank" rel="noopener noreferrer" className="social-icon" aria-label="LinkedIn Profile">
+                    <i className="fab fa-linkedin-in"></i>
                 </a>
-
-                <a href="mailto:yourmail@example.com" className="social-btn email">
-                    Email
+                <a href={SOCIAL_LINKS.email} className="social-icon" aria-label="Send Email">
+                    <i className="fas fa-envelope"></i>
                 </a>
             </div>
 

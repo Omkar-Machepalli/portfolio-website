@@ -11,10 +11,10 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 scroll-smooth">
+    <div>
       <Navbar />
       <Hero />
-      <Stats />
+      {/* <Stats /> */}
       <About />
       <Skills />
       <Projects />

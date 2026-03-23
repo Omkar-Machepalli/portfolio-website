@@ -17,22 +17,16 @@ const Skills = () => {
 
             <div className="row g-4">
             {skills.map((skill) => (
-                <div key={skill} className="col-12 col-sm-6 col-lg-4 col-xl-3">
+                <div key={skill.name} className="col-12 col-sm-6 col-lg-4 col-xl-3">
                 <div className="theme-card h-100">
-                    <div
-                    className="mb-3"
-                    style={{
-                        width: "40px",
-                        height: "40px",
-                        borderRadius: "12px",
-                        background: "linear-gradient(135deg, #fdba74 0%, #fb923c 100%)",
-                    }}
-                    ></div>
+                    <div className="mb-3">
+                        <i className={` ${skill.icon} skill-icon`} aria-hidden="true" ></i>
+                    </div>
 
-                    <h3 className="project-title mb-2">{skill}</h3>
+                    <h3 className="project-title mb-2">{skill.name}</h3>
 
                     <p className="project-text mb-0">
-                    Experience building practical frontend solutions using {skill}.
+                    Experience building practical frontend solutions using {skill.name}.
                     </p>
                 </div>
                 </div>

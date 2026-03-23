@@ -9,7 +9,7 @@ const Projects = () => {
             <p className="section-title">Projects</p>
 
             <h2 className="section-heading">
-              Selected work and module experience
+              Selected projects and work experience
             </h2>
           </div>
         </div>
@@ -23,30 +23,11 @@ const Projects = () => {
                         <div>
                             <div className="d-flex justify-content-between align-items-center gap-2 mb-3 flex-wrap">
                                 <h3 className="project-title mb-0">{project.title}</h3>
-                                <span className="project-tag">{project.category}</span>
                             </div>
 
                             <p className="project-text">{project.description}</p>
-
-                            <div className="mb-4">
-                                {project.tech.map((item) => (
-                                <span key={item} className="project-tag">
-                                    {item}
-                                </span>
-                                ))}
-                            </div>
                         </div>
 
-                        {/* Buttons pushed to bottom */}
-                        <div className="d-flex flex-wrap gap-3 mt-auto">
-                            <a href={project.demo} className="theme-btn">
-                                Live Demo
-                            </a>
-
-                            <a href={project.github} className="theme-btn-outline">
-                                GitHub
-                            </a>
-                        </div>
                     </div>
                 </article>
             </div>

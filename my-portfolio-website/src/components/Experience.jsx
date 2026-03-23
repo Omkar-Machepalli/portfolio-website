@@ -1,16 +1,6 @@
-import experiencePoints from "../data/experience";
+import experienceData from "../data/experience";
 
 const Experience = () => {
-  const tools = [
-    "Angular",
-    "TypeScript",
-    "RxJS",
-    "Kendo UI",
-    "Bootstrap",
-    "REST APIs",
-    "Git",
-  ];
-
   return (
     <section id="experience">
       <div className="container">
@@ -27,30 +17,30 @@ const Experience = () => {
 
         {/* Content */}
         <div className="row g-4">
-          
+
           {/* Left: Experience */}
           <div className="col-lg-7">
             <div className="experience-box">
               <div className="d-flex justify-content-between align-items-start flex-wrap mb-4 pb-3 border-bottom">
-                
+
                 <div>
                   <h3 className="project-title mb-1">
-                    Front-End Developer
+                    {experienceData.jobTitle}
                   </h3>
                   <p className="section-text mb-0">
-                    MR Soft Solutions
+                    {experienceData.company}
                   </p>
                 </div>
 
                 <span className="project-tag">
-                  2022 – Present
+                  {experienceData.duration}
                 </span>
               </div>
 
               <div>
-                {experiencePoints.map((point) => (
+                {experienceData.points.map((point) => (
                   <div key={point} className="d-flex align-items-start mb-3">
-                    
+
                     {/* Dot */}
                     <span
                       style={{
@@ -77,7 +67,7 @@ const Experience = () => {
               <h3 className="project-title mb-4">Tools Used</h3>
 
               <div className="row g-3">
-                {tools.map((tool) => (
+                {experienceData.tools.map((tool) => (
                   <div key={tool} className="col-6">
                     <div className="theme-card text-center py-3">
                       {tool}

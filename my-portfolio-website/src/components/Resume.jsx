@@ -1,3 +1,5 @@
+import { YEARS_OF_EXPERIENCE } from "../data/constants";
+
 const Resume = () => {
   return (
     <section id="resume">
@@ -11,7 +13,7 @@ const Resume = () => {
             </h2>
 
             <p className="section-text mb-0">
-              Front-End Developer with 2.8+ years of experience in Angular, RxJS,
+              Front-End Developer with {YEARS_OF_EXPERIENCE} years of experience in Angular, RxJS,
               TypeScript, and React, building scalable and responsive web
               applications.
             </p>
@@ -45,7 +47,7 @@ const Resume = () => {
                   Government Junior College, Marripudi
                 </p>
                 <p className="info-box-title mb-0">
-                  Percentage: 91%
+                  Completed: May 2018 | Percentage: 91%
                 </p>
               </div>
             </div>
@@ -56,14 +58,16 @@ const Resume = () => {
               <h3 className="project-title mb-4">Achievements</h3>
 
               <div className="theme-card mb-3">
+                <p className="project-title mb-1">Best Employee of the Year (2023)</p>
                 <p className="project-text mb-0">
-                  Best Employee of the Year (2023)
+                  Recognized for work quality and dedication to delivering high-quality solutions at MR Soft Solutions, contributing to team success.
                 </p>
               </div>
 
-              <div className="theme-card">
+              <div className="theme-card mb-3">
+                <p className="project-title mb-1">Academic Topper Award (2018)</p>
                 <p className="project-text mb-0">
-                  Academic Topper
+                  Awarded by JLA of Andhra Pradesh for securing first rank in Intermediate (MPC) with 430 marks at Government Junior College, Marripudi.
                 </p>
               </div>
             </div>

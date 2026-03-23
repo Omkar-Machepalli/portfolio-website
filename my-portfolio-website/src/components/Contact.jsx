@@ -67,13 +67,6 @@ const Contact = () => {
     }
   };
 
-  const getLink = (item) => {
-    if (item.label === "Email") return `mailto:${item.value}`;
-    if (item.label === "GitHub") return `https://${item.value}`;
-    if (item.label === "LinkedIn") return `https://${item.value}`;
-    return "#";
-  };
-
   return (
     <section id="contact">
       <div className="container">
@@ -94,20 +87,34 @@ const Contact = () => {
         <div className="row g-4">
           <div className="col-lg-5">
             <div className="contact-box">
-              {contactItems.map((item) => (
-                <div key={item.label} className="mb-4">
-                  <p className="info-box-title">{item.label}</p>
+              <h3 className="project-title mb-4">Contact Information</h3>
 
-                  <a
-                    href={getLink(item)}
-                    target={item.label !== "Email" ? "_blank" : undefined}
-                    rel={item.label !== "Email" ? "noreferrer" : undefined}
-                    className="contact-link"
-                  >
-                    {item.value}
-                  </a>
-                </div>
-              ))}
+              <div className="contact-list">
+                {contactItems.map((item) => (
+                  <div key={item.label} className="contact-item-row">
+                    <div className="contact-icon-box">
+                      <i className={item.icon}></i>
+                    </div>
+
+                    <div className="contact-content">
+                      <p className="contact-label mb-0">{item.label}</p>
+
+                      {item.link ? (
+                        <a
+                          href={item.link}
+                          target={item.label !== "Email" ? "_blank" : undefined}
+                          rel={item.label !== "Email" ? "noreferrer" : undefined}
+                          className="contact-value"
+                        >
+                          {item.value}
+                        </a>
+                      ) : (
+                        <p className="contact-value mb-0">{item.value}</p>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
 

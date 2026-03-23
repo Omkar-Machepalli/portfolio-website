@@ -2,7 +2,7 @@ const Navbar = () => {
   const links = ["about", "skills", "projects", "experience", "resume", "contact"];
 
   return (
-    <header className="position-sticky top-0 z-50">
+    <header className="position-sticky top-0 z-3">
       <nav className="navbar navbar-expand-lg navbar-custom py-3">
         <div className="container">
 
