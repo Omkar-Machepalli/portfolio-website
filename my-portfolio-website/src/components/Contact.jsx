@@ -3,6 +3,9 @@ import emailjs from "@emailjs/browser";
 import contactItems from "../data/contact-info";
 
 const Contact = () => {
+
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -35,6 +38,11 @@ const Contact = () => {
       return;
     }
 
+    if (!emailPattern.test(formData.email)) {
+      setStatus("Please enter a valid email address.");
+      return;
+    }
+
     try {
       setLoading(true);
       setStatus("");
@@ -47,7 +55,7 @@ const Contact = () => {
             from_email: formData.email,
             subject: formData.subject,
             message: formData.message,
-            to_name: "Darling Prabhas",
+            to_name: "Omkar Machepalli",
         },
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       );
