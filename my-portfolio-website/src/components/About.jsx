@@ -2,12 +2,12 @@ import { YEARS_OF_EXPERIENCE } from "../data/constants";
 
 const About = () => {
   const info = [
-    ["Experience", `${YEARS_OF_EXPERIENCE} Years`],
-    ["Primary Stack", "Angular"],
-    ["Secondary Stack", "React"],
-    ["Role", "Front-End Developer"],
-    ["UI Focus", "Responsive & Dynamic Interfaces"],
-    ["API Work", "REST Integration"],
+    ["Experience", `${YEARS_OF_EXPERIENCE} Years`, "fas fa-briefcase"],
+    ["Role", "Front-End Developer", "fas fa-laptop-code"],
+    ["Core Framework", "Angular", "fab fa-angular"],
+    ["Additional Framework", "React", "fab fa-react"],
+    ["Specialization", "Component-Based UI", "fas fa-mobile-alt"],
+    ["Backend Integration", "REST APIs", "fas fa-server"],
   ];
 
   return (
@@ -37,9 +37,10 @@ const About = () => {
         </div>
 
         <div className="row g-4">
-          {info.map(([label, value]) => (
+          {info.map(([label, value, icon]) => (
             <div className="col-md-6 col-lg-4" key={label}>
               <div className="info-box">
+                <i className={`${icon} skill-icon mb-2`} ></i>
                 <p className="info-box-title">{label}</p>
                 <p className="info-box-value">{value}</p>
               </div>

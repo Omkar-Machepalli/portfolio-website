@@ -26,7 +26,7 @@ const Skills = () => {
                     <h3 className="project-title mb-2">{skill.name}</h3>
 
                     <p className="project-text mb-0">
-                    Experience building practical frontend solutions using {skill.name}.
+                        {skill.description}
                     </p>
                 </div>
                 </div>

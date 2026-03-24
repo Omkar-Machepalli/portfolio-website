@@ -1,6 +1,9 @@
 import { YEARS_OF_EXPERIENCE } from "../data/constants";
 
 const Resume = () => {
+
+  const downloadableResumeUrl = "Omkar_Machepalli_Frontend_Developer.pdf";
+
   return (
     <section id="resume">
       <div className="container">
@@ -20,7 +23,7 @@ const Resume = () => {
           </div>
 
           <div className="col-lg-auto">
-            <a href="/resume.pdf" className="theme-btn">
+            <a href={downloadableResumeUrl} className="theme-btn" download={downloadableResumeUrl} rel="noopener noreferrer">
               Download Resume
             </a>
           </div>
