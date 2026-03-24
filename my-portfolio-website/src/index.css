@@ -24,6 +24,10 @@
   box-sizing: border-box;
 }
 
+.error-text-message {
+  color: var(--primary-orange-light);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -34,6 +38,15 @@ body {
   font-family: "Inter", sans-serif;
   background: linear-gradient(135deg, var(--background-cream) 0%, var(--background-cream-light) 45%, var(--background-cream-lighter) 100%);
   color: #1f2937;
+}
+
+.Toastify {
+  padding: 0 !important;
+}
+
+.Toastify__toast--error {
+  background: #ffe9bd;
+  color: #a44508;
 }
 
 h1, h2, h3 {
