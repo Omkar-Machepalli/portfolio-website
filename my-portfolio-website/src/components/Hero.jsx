@@ -52,12 +52,14 @@ const Hero = () => {
 
           <div className="col-lg-6">
             <div className="profile-card">
-              <img
-                src={profileImg}
-                alt="Omkar Machepalli"
-                className="profile-image"
-                loading="lazy"
-              />
+              <div className="text-center">
+                <img
+                  src={profileImg}
+                  alt="Omkar Machepalli"
+                  className="profile-image"
+                  loading="lazy"
+                />
+              </div>
 
               <div className="mt-4">
                 {techItems.map((item) => (
