@@ -1,38 +1,38 @@
 const projects = [
     {
-      title: "Membership Management Platform",
+      title: "Membership Platform",
       category: "Angular",
       description:
-        "A SaaS-based membership platform for managing members, payments, events, and communication.",
+        "SaaS platform for comprehensive member management including payments, events, and communication features with REST API integration.",
       tech: ["Angular", "TypeScript", "RxJS", "Kendo UI", "REST APIs"],
     },
     {
-      title: "Payment Forms Module",
-      category: "Forms",
+      title: "Payment Forms",
+      category: "Angular",
       description:
-        "Developed dynamic payment workflows with validation, multiple payment options, and improved usability.",
+        "Form builder with drag-and-drop elements for dynamic payment forms, featuring validation, multiple payment options, Kendo UI components, and Angular Reactive Forms with REST API integration.",
       tech: ["Angular", "Reactive Forms", "TypeScript"],
     },
     {
-      title: "Broadcast Module",
+      title: "Broadcast System",
       category: "Angular",
       description:
-        "Built recipient management and communication-related interfaces with dynamic data handling.",
+        "Communication system for managing recipients and broadcasting messages with dynamic data handling and real-time updates.",
       tech: ["Angular", "RxJS", "Kendo UI"],
     },
     {
-      title: "Events / Invoice / Committees Module",
+      title: "Events, Invoices & Committees",
       category: "Angular",
       description:
-        "Worked on business workflows and data-driven management pages for core enterprise modules.",
+        "Enterprise module handling business workflows for events, invoices, and committee management with data-driven interfaces and REST APIs.",
       tech: ["Angular", "TypeScript", "REST APIs"],
     },
     {
-      title: "React Task Manager Dashboard",
+      title: "Personal Portfolio Website",
       category: "React",
       description:
-        "A React-based dashboard with reusable components, clean UI sections, and API-driven interactions.",
-      tech: ["React", "TypeScript", "CSS", "APIs"],
-    },
+        "Responsive portfolio website showcasing skills, experience, and projects with modern React components.",
+      tech: ["React", "JavaScript", "CSS", "Bootstrap"],
+    }
 ];
 export default projects;
