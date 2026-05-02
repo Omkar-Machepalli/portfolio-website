@@ -2,7 +2,7 @@ import { YEARS_OF_EXPERIENCE } from "../data/constants";
 
 const Resume = () => {
 
-  const downloadableResumeUrl = "Omkar_Machepalli_Frontend_Developer.pdf";
+  const downloadableResumeUrl = "Omkar_Resume.pdf";
 
   return (
     <section id="resume">

@@ -1,7 +1,7 @@
 const experienceData = {
   jobTitle: "Front-End Developer",
   company: "MR Soft Solutions",
-  duration: "2022 – Present",
+  duration: "2023 – Present",
   description: "Developed responsive web applications using Angular and TypeScript.",
   points: [
     "Developed responsive web applications using Angular and TypeScript.",

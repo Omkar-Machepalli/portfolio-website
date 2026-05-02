@@ -1,5 +1,5 @@
 // Common constants used across the portfolio
-export const YEARS_OF_EXPERIENCE = "2.8+";
+export const YEARS_OF_EXPERIENCE = "3+";
 
 export const SOCIAL_LINKS = {
     github: "https://github.com/Omkar-Machepalli",
